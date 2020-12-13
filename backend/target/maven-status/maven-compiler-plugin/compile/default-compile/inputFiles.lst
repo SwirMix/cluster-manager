@@ -1,0 +1,13 @@
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/cluster/ClusterCreateRq.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/result/Status.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/hosts/HostController.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/result/Result.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/account/auth/AuthRq.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/hosts/HostRq.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/JwtValidatorService.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/account/AuthController.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/controllers/account/auth/Token.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/Application.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/Utils.java
+/home/ponchick/IdeaProjects/clusterManager/backend/src/main/java/org/manager/Configuration.java

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="db-core" />
+        <module name="jwt-tokens" />
+        <module name="backend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="external-api" target="8" />
+      <module name="vaadin-ui" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="backend" options="-parameters" />
+      <module name="clusterManager" options="-parameters" />
+      <module name="db-core" options="-parameters" />
+      <module name="jwt-tokens" options="-parameters" />
+      <module name="vaadin-ui" options="-parameters" />
+    </option>
+  </component>
+</project>

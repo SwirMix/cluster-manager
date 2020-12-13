@@ -1,0 +1,13 @@
+org/manager/controllers/account/AuthController.class
+org/manager/controllers/cluster/ClustersController.class
+org/manager/controllers/account/auth/AuthRq.class
+org/manager/Configuration.class
+org/manager/controllers/result/Status.class
+org/manager/controllers/hosts/HostRq.class
+org/manager/Utils.class
+org/manager/controllers/account/auth/Token.class
+org/manager/Application.class
+org/manager/controllers/result/Result.class
+org/manager/controllers/cluster/ClusterCreateRq.class
+org/manager/controllers/hosts/HostController.class
+org/manager/controllers/JwtValidatorService.class
