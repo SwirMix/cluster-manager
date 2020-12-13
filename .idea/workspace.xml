@@ -13,6 +13,9 @@
       <change afterPath="$PROJECT_DIR$/frontend/cluster-manager/src/components/ClustersPage.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/cluster-manager/src/components/HostsPage.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/cluster-manager/src/components/LoginPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/cluster-manager/src/plugins/vuetify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/cluster-manager/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/cluster-manager" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/cluster-manager/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/cluster-manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/cluster-manager/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager/public/index.html" afterDir="false" />
@@ -37,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend/cluster-manager" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
