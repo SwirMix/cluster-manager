@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91981fd5-be8c-4421-95d4-f0fed118664b" name="Default Changelist" comment="+base front">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/manager/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/manager/ScheduledTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/account/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/account/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/org/manager/ScheduledTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/org/manager/ScheduledTasks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/org/manager/controllers/account/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/org/manager/controllers/account/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/org/manager/controllers/cluster/ClustersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/org/manager/controllers/cluster/ClustersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-core/db/cluster-manager.db" beforeDir="false" afterPath="$PROJECT_DIR$/db-core/db/cluster-manager.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/cluster-manager.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/cluster-manager.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/cluster-manager" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/cluster-manager/src/components/ClustersPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cluster-manager/src/components/ClustersPage.vue" afterDir="false" />
     </list>
@@ -48,22 +42,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/manage-system/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38549954" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/main/resources" />
+      <recent name="$PROJECT_DIR$/backend/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/frontend/manage-system/src" />
       <recent name="$PROJECT_DIR$/frontend/manage-system/src/components" />
       <recent name="$PROJECT_DIR$/frontend/manager/backup" />
-      <recent name="$PROJECT_DIR$/frontend/manager/src" />
-      <recent name="$PROJECT_DIR$/frontend/manager/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/vaadin-ui" />
       <recent name="$PROJECT_DIR$/vaadin-ui/src" />
     </key>
@@ -337,11 +333,57 @@
           <line>160</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClusterCreateRq.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClusterCreateRq.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClusterCreateRq.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/hosts/HostController.java</url>
           <line>25</line>
           <properties field="jwtService" class="org.manager.controllers.hosts.HostController" />
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClustersController.java</url>
+          <line>49</line>
+          <properties class="org.manager.controllers.cluster.ClustersController" method="create">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/org/manager/controllers/cluster/ClusterCreateRq.java</url>
+          <line>56</line>
+          <properties class="org.manager.controllers.cluster.ClusterCreateRq" method="setHosts">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
