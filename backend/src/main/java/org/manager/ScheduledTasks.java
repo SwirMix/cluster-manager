@@ -24,7 +24,7 @@ public class ScheduledTasks {
     @Autowired
     private DataStorageConfiguration dataStorageConfiguration;
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 60000)
     public void reportCurrentTime() {
         ClusterService service = dataStorageConfiguration.getClusterService();
         System.out.println("The time is now " + dateFormat.format(new Date()));

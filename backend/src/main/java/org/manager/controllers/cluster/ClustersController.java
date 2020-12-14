@@ -190,7 +190,7 @@ public class ClustersController {
 
     @EndPointInfo(
             name = "Запрос списка всех кластеров",
-            endPoint = "POST /api/v1/cluster/destroy/{clusterName}",
+            endPoint = "GET /api/v1/clusters/all",
             secureType = RestInfo.Security.OPEN,
             requestType = RestInfo.RequestType.GET,
             requestInfo = "",

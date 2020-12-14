@@ -4,6 +4,7 @@ import org.cluster.dao.DataStorageConfiguration;
 import org.cluster.dto.account.Account;
 import org.cluster.dto.account.AccountService;
 import org.manager.Utils;
+import org.manager.controllers.JwtValidatorService;
 import org.manager.controllers.account.auth.AuthRq;
 import org.manager.controllers.info.EndPointInfo;
 import org.manager.controllers.info.RestInfo;
@@ -24,19 +25,21 @@ public class AuthController {
     @Autowired(required=true)
     private DataStorageConfiguration sqlite;
     @Autowired
+    private JwtValidatorService jwtValidatorService;
+    @Autowired
     private JwtService jwtService;
 
     @EndPointInfo(
             name = "token generation api",
-            endPoint = "GET /api/v1/generate",
+            endPoint = "POST /api/v1/generate",
             secureType = RestInfo.Security.OPEN,
-            requestType = RestInfo.RequestType.GET,
+            requestType = RestInfo.RequestType.POST,
             requestInfo = "{\"login\":\"login\",\"password\":\"password\"}",
             responseInfo = "{\"token\":\"token\"}",
             description = "запрос на генериацию токена. Токен сохраняется в БД и используется для аутентификации в дальнейшем."
     )
     @CrossOrigin(origins = "http://localhost:8080")
-    @GetMapping("/api/v1/generate")
+    @PostMapping("/api/v1/generate")
     public ResponseEntity<Map<String, Object>> auth(@RequestBody AuthRq authRq){
         if (Utils.firstLineValidate(authRq)){
             try {
@@ -77,7 +80,7 @@ public class AuthController {
 
     @EndPointInfo(
             name = "Авторизация в системе",
-            endPoint = "GET /api/v1/auth",
+            endPoint = "POST /api/v1/auth",
             secureType = RestInfo.Security.OPEN,
             requestType = RestInfo.RequestType.POST,
             requestInfo = "{\"login\":\"login\",\"password\":\"password\"}",
@@ -137,6 +140,50 @@ public class AuthController {
         tokenObject.setLogin(account.getLogin());
         tokenObject.setSupport(UUID.randomUUID().toString());
         return jwtService.createToken(tokenObject);
+    }
+
+    @EndPointInfo(
+            name = "Создание нового аккаунта",
+            endPoint = "POST /api/vi/account/create",
+            secureType = RestInfo.Security.SECURE,
+            requestType = RestInfo.RequestType.POST,
+            requestInfo = "{\"login\":\"login\",\"password\":\"password\"}",
+            responseInfo = "",
+            description = "Создание нового аккаунта. К POST запросу необходимо прикладывать токен учетной записи. Защищенное API"
+    )
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping("/api/v1/account/create")
+    public ResponseEntity<Map<String, Object>> addNewAccount(@RequestBody AuthRq authRq, @RequestHeader String token){
+        TokenObject tokenObject;
+        if(Utils.firstLineValidate(authRq)){
+            try {
+                tokenObject = jwtValidatorService.checkToken(token);
+            } catch (Exception e){
+                Map<String, Object> response = new HashMap<>();
+                response.put("msg", "invalid token");
+                return new ResponseEntity<>(response, HttpStatus.FORBIDDEN);
+            }
+            Account account = new Account();
+            account.setPassword(authRq.getPassword());
+            account.setLogin(authRq.getLogin());
+            try {
+                sqlite.getAccountService().save(account);
+
+                Map<String, Object> response = new HashMap<>();
+                response.put("msg", "new account was created");
+                return new ResponseEntity<>(response, HttpStatus.OK);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+
+                Map<String, Object> response = new HashMap<>();
+                response.put("msg", "fail create new account. Login exist?");
+                return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+            }
+        } else {
+            Map<String, Object> response = new HashMap<>();
+            response.put("msg", "empty data");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
     }
 
 }
